@@ -23,6 +23,11 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: var(--grey-txt);
+}
+
 /* ----------- UTILITY CLASS ----------- */
 .d-flex {
     display: flex;
@@ -52,7 +57,7 @@ body {
     color: var(--grey-txt);
     font-size: .7rem;
     font-weight: bold;
-    padding: 1rem;
+    padding: 1rem 1rem 0.5rem 1rem;
 }
 
 .sidebar-titles {
@@ -101,6 +106,51 @@ padding-bottom: 1rem;
 
 .create-playlist {
     font-size: .85rem;
+}
+
+.playlist-list {
+    overflow: auto;
+}
+
+.playlist-list ul li {
+    list-style: none;
+    padding: .5rem 0;
+}
+
+/* INSTALLA + USER */
+.install {
+    align-items: center;
+    font-size: .5rem;
+}
+
+.install-img {
+    padding-right: 10px;
+}
+
+.install-img img {
+    width: 10px;
+    vertical-align: middle;
+}
+
+.divider {
+    height: 1px;
+    padding: .3rem 0;
+    border-bottom: 1px solid var(--grey-txt);
+}
+
+.user {
+    align-items: center;
+    padding-top: .5rem;
+    font-size: .55rem;
+    color: var(--color-quaternary);
+}
+
+.user-img img {
+    width: 17px;
+    height: 17px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 /* ------ END SIDEBAR ------ */

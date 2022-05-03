@@ -182,6 +182,33 @@ padding-bottom: 1rem;
 }
 /* ------- END TOP NAVIGATION BAR ------- */
 
+/* ----------- MAIN CONTAINER ----------- */
+.main-content {
+    background-color: var(--color-primary);
+    overflow: auto;
+    padding-top: 4rem;
+}
+
+.link-bar {
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.link-bar a {
+    font-size: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 .4rem;
+}
+
+.album-wrapper {
+    /*DEBUG*/
+    background-color: darkslateblue;
+    height: 100px;
+    width: 100px;
+}
+
+
 /* ----- PLAYER BOTTOM BAR ------ */
 .player-bar {
     /*DEBUG*/
@@ -297,16 +324,3 @@ padding-bottom: 1rem;
     border-radius: 10px;
 }
 /* ----- END PLAYER BOTTOM BAR ------ */
-
-.main-content {
-    background-color: var(--color-primary);
-    overflow: auto;
-    padding-top: 4.5rem;
-}
-
-.album-wrapper {
-    /*DEBUG*/
-    background-color: darkslateblue;
-    height: 100px;
-    width: 100px;
-}

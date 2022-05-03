@@ -14,6 +14,7 @@ body {
     --color-secondary: #000;
     --color-tertiary: #282828;
     --color-quaternary: #fff;
+    --color-quinary: lightgrey;
     --grey-txt: #717171;
 }
 
@@ -82,9 +83,10 @@ a {
 padding-bottom: 1rem;
 }
 
-.menu-icon img {
+.menu-icon svg {
     width: 25px;
     margin-right: 5px;
+    fill: var(--color-quinary);
 }
 
 /* PLAYLIST */
@@ -95,7 +97,7 @@ padding-bottom: 1rem;
     font-size: 1.3rem;
     line-height: 35px;
     color: black;
-    background-color: gray;
+    background-color: var(--color-quinary);
     margin-right: 10px;
 }
 
@@ -214,10 +216,33 @@ padding-bottom: 1rem;
     font-size: .65rem;
 }
 
-.album-icons {
-    gap: 10px;
-    font-size: .8rem;
+.album-icons, .view-btn {
+    gap: 15px;
+    font-size: .9rem;
 }
+
+/* PARTE DESTRA PLAYER BAR */
+.view-btn {
+    color: var(--color-quinary);
+}
+
+.volume {
+    height: 2.5px;
+    min-width: 80px;
+    background-color: var(--grey-txt);
+    position: relative;
+    border-radius: 10px;
+}
+
+.volume-progress {
+    height: 2.5px;
+    min-width: 20px;
+    background-color: var(--color-quinary);
+    position: absolute;
+    border-radius: 10px;
+}
+
+
 
 .player {
     max-width: 80%;

@@ -110,6 +110,11 @@ padding-bottom: 1rem;
 
 .playlist-list {
     overflow: auto;
+    max-height: 300px;
+}
+
+.playlist-list ul {
+    height: 100%;
 }
 
 .playlist-list ul li {
@@ -152,7 +157,6 @@ padding-bottom: 1rem;
     border-radius: 50%;
     margin-right: 5px;
 }
-
 /* ------ END SIDEBAR ------ */
 
 /* ---- TOP NAVIGATION BAR WITH BUTTON ---- */
@@ -201,6 +205,7 @@ padding-bottom: 1rem;
 .main-content {
     background-color: var(--color-primary);
     overflow: auto;
+    padding-top: 4.5rem;
 }
 
 .album-wrapper {

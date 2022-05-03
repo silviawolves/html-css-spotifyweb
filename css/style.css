@@ -180,17 +180,43 @@ padding-bottom: 1rem;
 }
 /* ------- END TOP NAVIGATION BAR ------- */
 
-
+/* ----- PLAYER BOTTOM BAR ------ */
 .player-bar {
     /*DEBUG*/
     padding: .5rem 0;
-    background-color: burlywood;
+    background-color: var(--color-tertiary);
     justify-content: space-between;
+    gap: 20px;
 }
 
+/* PARTE SINISTRA PLAYER BAR */
 .album-info, .player-info {
-    /*DEBUG*/
-    background-color: darkgoldenrod;
+    color: var(--grey-txt);
+    align-items: center;
+    padding: .6rem;
+    gap: 10px;
+}
+
+.album-cover-small img {
+    height: 37px;
+}
+
+.album-name {
+    padding-right: 1.2rem;
+}
+
+.album-name h5 {
+    color: var(--color-quaternary);
+    font-size: .7rem;
+}
+
+.album-name h6 {
+    font-size: .65rem;
+}
+
+.album-icons {
+    gap: 10px;
+    font-size: .8rem;
 }
 
 .player {
@@ -198,7 +224,6 @@ padding-bottom: 1rem;
     width: 100%;
     text-align: center;
     /*DEGUB*/
-    background-color: orange;
     justify-content: center;
 }
 

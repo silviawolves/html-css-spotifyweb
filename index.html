@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Spotify</title>
 </head>
 
@@ -21,15 +22,50 @@
             <div class="sidebar f-shrink d-flex direction-column">
 
                 <!--LOGO-->
-                <div class="spotify-logo f-shrink">logo</div>
+                <div class="spotify-logo f-shrink">
+                    <img src="img/logo.svg" alt="spotify logo">
+                </div>
                 
                 <!--MENU-->
-                <div class="menu-list f-shrink">menù</div>
+                <div class="menu-list f-shrink">
+
+                    <div class="home d-flex">
+                        <div class="menu-icon">
+                            <img src="img/home.svg" alt="home">
+                        </div>
+                        <div class="menu-text">Home</div>
+                    </div>
+
+                    <div class="search d-flex">
+                        <div class="menu-icon">
+                            <img src="img/search.svg" alt="search">
+                        </div> 
+                        <div class="menu-text">Cerca</div>
+                    </div>
+
+                    <div class="library d-flex">
+                        <div class="menu-icon">
+                            <img src="img/libreria.svg" alt="library">
+                        </div>
+                        <div class="menu-text">La tua libreria</div>
+                    </div>
+
+                </div>
                 
                 <!--PLAYLIST-->
                 <div class="playlist f-grow d-flex direction-column">
                     
-                    <div class="playlist-title f-shrink">playlist title</div>
+                    <!--INTESTAZIONE FISSA PLAYLIST-->
+                    <div class="playlist-title f-shrink">
+                        <h3 class="sidebar-titles">PLAYLIST</h3>
+
+                        <div class="add-playlist d-flex">
+                            <div class="playlist-add-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="create-playlist">Crea Playlist</div>
+                        </div>
+                    </div>
 
                     <div class="playlist-list f-grow">
                         <ul>
@@ -53,7 +89,7 @@
 
                 <!--NAVBAR SUPERIORE SPOTIFY PREMIUM-->
                 <div class="top-nav-bar f-shrink">
-                        <button class="spotify-prm-btn">Effettua l'upgrade</button>
+                    <button class="spotify-prm-btn">Effettua l'upgrade</button>
                 </div>
 
                 <!--CONTENUTO RIPRODUCIBILE SU SPOTIFY-->

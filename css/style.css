@@ -45,7 +45,67 @@ body {
 }
 /* --------- END UTILITY CLASS ---------- */
 
-/* TOP NAVIGATION BAR WITH SPOTIFY PREMIUM BUTTON*/
+/* -------- SIDEBAR -------- */
+.sidebar {
+    min-width: 200px;
+    background-color: var(--color-secondary);
+    color: var(--grey-txt);
+    font-size: .7rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.sidebar-titles {
+    color: var(--color-quaternary);
+}
+
+/* LOGO + MENU */
+.spotify-logo {
+    padding-bottom: 1rem;
+}
+
+.spotify-logo img {
+    height: 30px;
+}
+
+.home, .search, .library {
+    align-items: center;
+    padding: .3rem;
+}
+
+.menu-list {
+padding-bottom: 1rem;
+}
+
+.menu-icon img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+/* PLAYLIST */
+.playlist-add-icon {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 35px;
+    color: black;
+    background-color: gray;
+    margin-right: 10px;
+}
+
+.add-playlist {
+    padding: .8rem 0;
+    align-items: center;
+}
+
+.create-playlist {
+    font-size: .85rem;
+}
+
+/* ------ END SIDEBAR ------ */
+
+/* ---- TOP NAVIGATION BAR WITH BUTTON ---- */
 .top-nav-bar {
     padding: 1.2rem .5rem;
     background-color: rgba(8,11,18,.8);
@@ -64,14 +124,8 @@ body {
     padding: .6rem 2rem;
     float: right;
 }
-/*------------ END TOP NAVIGATION BAR -----------*/
+/* ------- END TOP NAVIGATION BAR ------- */
 
-
-.sidebar {
-    min-width: 200px;
-    /*DEBUG*/
-    background-color: blanchedalmond;
-}
 
 .player-bar {
     /*DEBUG*/

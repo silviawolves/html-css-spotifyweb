@@ -189,6 +189,10 @@ padding-bottom: 1rem;
     padding-top: 4rem;
 }
 
+.content-section {
+    padding: 1rem;
+}
+
 .link-bar {
     text-align: center;
     padding: .5rem 0;
@@ -201,11 +205,21 @@ padding-bottom: 1rem;
     padding: 0 .4rem;
 }
 
+.section-title h3 {
+    color: var(--color-quaternary);
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.album-list {
+    gap: 10px;
+}
+
 .album-wrapper {
-    /*DEBUG*/
+    flex-basis: calc((100% / 6) - 10px);
     background-color: darkslateblue;
-    height: 100px;
-    width: 100px;
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 

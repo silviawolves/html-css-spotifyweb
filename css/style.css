@@ -45,17 +45,32 @@ body {
 }
 /* --------- END UTILITY CLASS ---------- */
 
+/* TOP NAVIGATION BAR WITH SPOTIFY PREMIUM BUTTON*/
+.top-nav-bar {
+    padding: 1.2rem .5rem;
+    background-color: rgba(8,11,18,.8);
+    position: fixed;
+    width: calc(100% - 200px);
+}
+
+.spotify-prm-btn {
+    background-color: transparent;
+    color: var(--color-quaternary);
+    font-size: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid var(--color-quaternary);
+    border-radius: 30px;
+    padding: .6rem 2rem;
+    float: right;
+}
+/*------------ END TOP NAVIGATION BAR -----------*/
+
 
 .sidebar {
     min-width: 200px;
     /*DEBUG*/
     background-color: blanchedalmond;
-}
-
-.nav-bar {
-    /*DEBUG*/
-    padding: 2rem 0;
-    background-color: beige;
 }
 
 .player-bar {
@@ -81,6 +96,7 @@ body {
 
 .main-content {
     background-color: var(--color-primary);
+    overflow: auto;
 }
 
 .album-wrapper {
@@ -88,8 +104,4 @@ body {
     background-color: darkslateblue;
     height: 100px;
     width: 100px;
-}
-
-.content-section {
-    overflow: auto;
 }

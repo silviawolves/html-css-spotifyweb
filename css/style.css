@@ -205,18 +205,26 @@ padding-bottom: 1rem;
     padding: 0 .4rem;
 }
 
+.section-title {
+    padding-bottom: 1.5rem;
+}
+
 .section-title h3 {
     color: var(--color-quaternary);
     font-size: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+.section-title h6 {
+    color: var(--grey-txt);
 }
 
 .album-list {
-    gap: 10px;
+    gap: 20px;
 }
 
 .album-wrapper {
-    flex-basis: calc((100% / 6) - 10px);
+    flex-basis: calc((100% / 6) - 20px);
     background-color: darkslateblue;
     width: 100%;
     aspect-ratio: 1/1;

@@ -296,7 +296,7 @@ padding-bottom: 1rem;
     position: absolute;
     border-radius: 10px;
 }
-
+/* ----- END PLAYER BOTTOM BAR ------ */
 
 .main-content {
     background-color: var(--color-primary);

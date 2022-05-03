@@ -221,6 +221,33 @@ padding-bottom: 1rem;
     font-size: .9rem;
 }
 
+/* PARTE CENTRALE PLAYER BAR */
+.player {
+    max-width: 80%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-btn .btn {
+    color: var(--color-quaternary);
+    padding: .5rem;
+}
+
+.btn i {
+    padding: 0 .5rem;
+    vertical-align: middle;
+}
+
+.fa-regular.fa-circle-play {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+}
+
+
+
+
 /* PARTE DESTRA PLAYER BAR */
 .view-btn {
     color: var(--color-quinary);
@@ -242,15 +269,6 @@ padding-bottom: 1rem;
     border-radius: 10px;
 }
 
-
-
-.player {
-    max-width: 80%;
-    width: 100%;
-    text-align: center;
-    /*DEGUB*/
-    justify-content: center;
-}
 
 .main-content {
     background-color: var(--color-primary);

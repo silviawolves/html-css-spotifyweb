@@ -245,8 +245,36 @@ padding-bottom: 1rem;
     padding: 0 1rem;
 }
 
+.player-details {
+    justify-content: center;
+    align-items: center;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
 
+.initial-time, .final-time {
+    font-size: .6rem;
+    font-weight: bold;
+    color: var(--color-quaternary);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
+.time-bar {
+    max-width: 400px;
+    height: 2.5px;
+    background-color: var(--grey-txt);
+    position: relative;
+    border-radius: 10px;
+}
+
+.time-bar-progress {
+    min-width: 25%;
+    height: 2.5px;
+    background-color: var(--color-quinary);
+    position: absolute;
+    border-radius: 10px;
+}
 
 /* PARTE DESTRA PLAYER BAR */
 .view-btn {

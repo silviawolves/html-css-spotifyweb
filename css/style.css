@@ -8,3 +8,88 @@ body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
+
+:root {
+    --color-primary: #141922;
+    --color-secondary: #000;
+    --color-tertiary: #282828;
+    --color-quaternary: #fff;
+    --grey-txt: #717171;
+}
+
+#app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------- UTILITY CLASS ----------- */
+.d-flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.f-grow {
+    flex-grow: 1;
+}
+
+.f-shrink {
+    flex-shrink: 0;
+}
+
+.over-hidden {
+    overflow: hidden;
+}
+/* --------- END UTILITY CLASS ---------- */
+
+
+.sidebar {
+    min-width: 200px;
+    /*DEBUG*/
+    background-color: blanchedalmond;
+}
+
+.nav-bar {
+    /*DEBUG*/
+    padding: 2rem 0;
+    background-color: beige;
+}
+
+.player-bar {
+    /*DEBUG*/
+    padding: .5rem 0;
+    background-color: burlywood;
+    justify-content: space-between;
+}
+
+.album-info, .player-info {
+    /*DEBUG*/
+    background-color: darkgoldenrod;
+}
+
+.player {
+    max-width: 80%;
+    width: 100%;
+    text-align: center;
+    /*DEGUB*/
+    background-color: orange;
+    justify-content: center;
+}
+
+.main-content {
+    background-color: var(--color-primary);
+}
+
+.album-wrapper {
+    /*DEBUG*/
+    background-color: darkslateblue;
+    height: 100px;
+    width: 100px;
+}
+
+.content-section {
+    overflow: auto;
+}

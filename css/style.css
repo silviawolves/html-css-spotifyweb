@@ -49,6 +49,10 @@ a {
 .over-hidden {
     overflow: hidden;
 }
+
+.over-auto {
+    overflow: auto;
+}
 /* --------- END UTILITY CLASS ---------- */
 
 /* -------- SIDEBAR -------- */
@@ -112,7 +116,6 @@ padding-bottom: 1rem;
 
 .playlist-list {
     overflow: auto;
-    max-height: 300px;
 }
 
 .playlist-list ul {
@@ -186,7 +189,7 @@ padding-bottom: 1rem;
 .main-content {
     background-color: var(--color-primary);
     overflow: auto;
-    padding-top: 4rem;
+    padding-top: 4.5rem;
 }
 
 .content-section {
@@ -199,7 +202,7 @@ padding-bottom: 1rem;
 }
 
 .link-bar a {
-    font-size: .5rem;
+    font-size: .7rem;
     text-transform: uppercase;
     font-weight: bold;
     padding: 0 .4rem;
@@ -211,7 +214,7 @@ padding-bottom: 1rem;
 
 .section-title h3 {
     color: var(--color-quaternary);
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: .5rem;
 }
 
@@ -220,16 +223,16 @@ padding-bottom: 1rem;
 }
 
 .album-list {
-    gap: 20px;
+    gap: 15px;
 }
 
 .album-wrapper {
     flex-basis: calc(100% / 6);
-    background-color: darkslateblue;
     aspect-ratio: 1/1;
 }
 
 .album-img {
+    margin-bottom: 1rem;
 }
 
 .album-img img {
@@ -237,14 +240,29 @@ padding-bottom: 1rem;
     width: 100%;
 }
 
+.round {
+    border-radius: 50%;
+}
+
+.album-title {
+    text-align: center;
+}
+
+.album-title h4 {
+    color: var(--color-quaternary);
+    font-size: .9rem;
+    padding-bottom: .5rem;
+}
+
+.album-title h5 {
+    color: var(--grey-txt);
+    font-size: .7rem;
+}
 
 /* ----- PLAYER BOTTOM BAR ------ */
 .player-bar {
-    /*DEBUG*/
-    padding: .5rem 0;
     background-color: var(--color-tertiary);
-    justify-content: space-between;
-    gap: 20px;
+    overflow: hidden;
 }
 
 /* PARTE SINISTRA PLAYER BAR */
@@ -252,7 +270,6 @@ padding-bottom: 1rem;
     color: var(--grey-txt);
     align-items: center;
     padding: .6rem;
-    gap: 10px;
 }
 
 .album-cover-small img {
@@ -260,7 +277,7 @@ padding-bottom: 1rem;
 }
 
 .album-name {
-    padding-right: 1.2rem;
+    padding: 1.2rem;
 }
 
 .album-name h5 {
@@ -278,17 +295,19 @@ padding-bottom: 1rem;
 }
 
 /* PARTE CENTRALE PLAYER BAR */
-.player {
-    max-width: 80%;
-    width: 100%;
+.player-controls {
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    padding: .8rem;
 }
 
-.player-btn .btn {
+.control-btn {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+
+.control-btn .btn {
     color: var(--color-quaternary);
-    padding: .5rem;
 }
 
 .btn i {
@@ -301,23 +320,22 @@ padding-bottom: 1rem;
     padding: 0 1rem;
 }
 
-.player-details {
+.control-details {
     justify-content: center;
     align-items: center;
-    padding-top: .5rem;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
+    gap: 25px;
 }
 
 .initial-time, .final-time {
     font-size: .6rem;
     font-weight: bold;
     color: var(--color-quaternary);
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 .time-bar {
     max-width: 400px;
+    min-width: 100px;
     height: 2.5px;
     background-color: var(--grey-txt);
     position: relative;
@@ -335,6 +353,7 @@ padding-bottom: 1rem;
 /* PARTE DESTRA PLAYER BAR */
 .view-btn {
     color: var(--color-quinary);
+    padding: 1rem;
 }
 
 .volume {

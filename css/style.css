@@ -53,6 +53,10 @@ a {
 .over-auto {
     overflow: auto;
 }
+
+.space {
+    justify-content: space-between;
+}
 /* --------- END UTILITY CLASS ---------- */
 
 /* -------- SIDEBAR -------- */
@@ -244,7 +248,7 @@ padding-bottom: 1rem;
 /*LINK TOP BAR*/
 .link-bar {
     text-align: center;
-    padding: .5rem 0;
+    padding: .5rem 1rem;
 }
 
 .link-bar a {
@@ -252,6 +256,7 @@ padding-bottom: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     padding: 0 .4rem;
+    display: inline-block;
 }
 
 .link-bar a:hover {
@@ -504,3 +509,67 @@ h6 a:hover {
     display: block;
 }
 /* ----- END PLAYER BOTTOM BAR ------ */
+
+/* RESPONSIVE QUERY */
+@media screen and (max-width: 1100px) {
+    .album-list {
+        gap: 10px;
+    }
+
+    .control-details {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .link-bar a {
+        font-size: .6rem;
+    }
+
+    .album-list {
+        flex-wrap: wrap;
+    }
+
+    .album-wrapper {
+        flex-basis: calc((100% / 4) - 10px);
+    }
+
+    .album-title h4 {
+        font-size: .7rem;
+    }
+
+    .album-title h5 {
+        font-size: .5rem;
+    }
+
+    .control-details {
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .link-bar a {
+        padding: 1rem;
+    }
+
+    .border-green-bottom {
+        left: 50%;
+        top: 32px;
+        transform: translate(-50%);
+    }
+
+    .album-wrapper {
+        flex-basis: calc((100% / 2) - 10px);
+    }
+
+    .album-icons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    
+}

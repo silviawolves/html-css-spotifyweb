@@ -485,6 +485,7 @@ h6 a:hover {
 /* PARTE DESTRA PLAYER BAR */
 .view-btn {
     color: var(--color-quinary);
+    font-size: .8rem;
 }
 
 .volume {
@@ -630,6 +631,27 @@ h6 a:hover {
     }
 
     .top-nav-bar {
-        width: calc(100% - 30px);
+        width: calc((100% - 30px) - .5rem);
+    }
+
+    .album-cover-small img {
+        height: 30px;
+    }
+
+    .album-name h6 a {
+        display: block;
+        width: 20px;
+    }
+
+    .album-name {
+        padding-right: 1rem;
+    }
+
+    .volume {
+        min-width: 70px;
+    }
+
+    .time-bar {
+        max-width: 80px;
     }
 }

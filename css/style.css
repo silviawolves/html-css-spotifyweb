@@ -349,13 +349,13 @@ padding-bottom: 1rem;
 
 .album-title h4 {
     color: var(--color-quaternary);
-    font-size: .9rem;
+    font-size: .8rem;
     padding-bottom: .5rem;
 }
 
 .album-title h5 {
     color: var(--grey-txt);
-    font-size: .7rem;
+    font-size: .6rem;
 }
 
 /* ----- PLAYER BOTTOM BAR ------ */
@@ -543,7 +543,7 @@ h6 a:hover {
     }
 
     .album-title h5 {
-        font-size: .5rem;
+        font-size: .6rem;
     }
 
     .control-details {

@@ -238,7 +238,7 @@ padding-bottom: 1rem;
 }
 
 .content-section {
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 /*LINK TOP BAR*/
@@ -380,9 +380,18 @@ padding-bottom: 1rem;
     font-size: .65rem;
 }
 
+h6 a:hover {
+    text-decoration: underline;
+    color: var(--color-quaternary);
+}
+
 .album-icons, .view-btn {
     gap: 15px;
     font-size: .9rem;
+}
+
+.album-icons i:hover {
+    color: var(--color-quaternary);
 }
 
 /* PARTE CENTRALE PLAYER BAR */
@@ -406,9 +415,13 @@ padding-bottom: 1rem;
     vertical-align: middle;
 }
 
-.fa-regular.fa-circle-play {
+#main-play {
     font-size: 1.8rem;
     padding: 0 1rem;
+}
+
+#main-play:hover {
+    transform: scale(1.1);
 }
 
 .control-details {

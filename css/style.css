@@ -177,7 +177,7 @@ padding-bottom: 1rem;
 
 /* ---- TOP NAVIGATION BAR WITH BUTTON ---- */
 .top-nav-bar {
-    padding: 1.2rem .5rem;
+    padding: 1.2rem 1rem;
     background-color: rgba(8,11,18,.8);
     position: fixed;
     width: calc(100% - 200px);
@@ -194,6 +194,10 @@ padding-bottom: 1rem;
     border-radius: 30px;
     padding: .6rem 2rem;
     float: right;
+}
+
+.spotify-prm-btn:hover {
+    transform: scale(1.15);
 }
 /* ------- END TOP NAVIGATION BAR ------- */
 
@@ -219,6 +223,10 @@ padding-bottom: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     padding: 0 .4rem;
+}
+
+.link-bar a:hover {
+    color: var(--color-quaternary);
 }
 
 .evidenza {

@@ -78,8 +78,12 @@ a {
     padding-bottom: 1rem;
 }
 
-.spotify-logo img {
+.spotify-img {
     height: 30px;
+}
+
+.small-logo {
+    display: none;
 }
 
 .home, .search, .library {
@@ -114,44 +118,6 @@ padding-bottom: 1rem;
     width: 25px;
     margin-right: 5px;
     fill: var(--color-quinary);
-}
-
-/* -------- SMALL SIDEBAR -------- */
-.small-sidebar {
-    min-width: 40px;
-    background-color: var(--color-secondary);
-    color: var(--grey-txt);
-    display: none;
-    padding: .5rem;
-}
-
-.only-icons img {
-    display: block;
-    padding-bottom: 15px;
-}
-
-.only-icons svg {
-    fill: var(--color-quinary);
-    padding-bottom: 5px;
-}
-
-.user-small {
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.user-small svg {
-    width: 15px;
-    fill: var(--grey-txt);
-    text-align: center;
-}
-
-.user-small img {
-    width: 20px;
-    height: 20px;
-    background-color: gray;
-    border-radius: 50%;
 }
 
 /* PLAYLIST */
@@ -622,11 +588,45 @@ h6 a:hover {
     }
 
     .sidebar {
+        min-width: 30px;
+        padding: .5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spotify-img,
+    .border-green-left,
+    .menu-text,
+    .playlist-title,
+    .playlist-list,
+    .install-text,
+    .user-name,
+    .divider {
         display: none;
     }
 
-    .small-sidebar {
+    .small-logo {
         display: block;
+        height: 25px;
+    }
+
+    .home, .search, .library {
+        padding: 0.1rem 0;
+    }
+
+    .menu-icon svg,
+    .user-img img {
+        margin-right: 0px;
+    }
+
+    .install-img {
+        padding-right: 0;
+        padding-bottom: .5rem;
+    }
+
+    .user,
+    .install {
+        justify-content: center;
     }
 
     .top-nav-bar {

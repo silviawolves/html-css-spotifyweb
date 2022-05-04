@@ -80,7 +80,18 @@ a {
 
 .home, .search, .library {
     align-items: center;
-    padding: .3rem;
+    padding: .3rem 0;
+}
+
+.home {
+    position: relative;
+}
+
+.border-green-left {
+    height: 100%;
+    position: absolute;
+    left: -15px;
+    border-left: 2px solid #adff2f;
 }
 
 .menu-list {
@@ -170,12 +181,13 @@ padding-bottom: 1rem;
     background-color: rgba(8,11,18,.8);
     position: fixed;
     width: calc(100% - 200px);
+    z-index: 1;
 }
 
 .spotify-prm-btn {
     background-color: transparent;
     color: var(--color-quaternary);
-    font-size: .5rem;
+    font-size: .6rem;
     text-transform: uppercase;
     font-weight: bold;
     border: 1px solid var(--color-quaternary);
@@ -196,6 +208,7 @@ padding-bottom: 1rem;
     padding: 1rem;
 }
 
+/*LINK TOP BAR*/
 .link-bar {
     text-align: center;
     padding: .5rem 0;
@@ -208,6 +221,21 @@ padding-bottom: 1rem;
     padding: 0 .4rem;
 }
 
+.evidenza {
+    position: relative;
+    display: inline-block;
+}
+
+.border-green-bottom {
+    width: 30%;
+    border-bottom: 2px solid #adff2f;
+    position: absolute;
+    left: 50%;
+    top: 17px;
+    transform: translate(-50%);
+}
+
+/*ALBUM SELECTION*/
 .section-title {
     padding-bottom: 1.5rem;
 }

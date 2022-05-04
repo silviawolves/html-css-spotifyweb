@@ -83,6 +83,14 @@ a {
     padding: .3rem 0;
 }
 
+.home:hover, .search:hover, .library:hover {
+    color: var(--color-quaternary);
+}
+
+.home:hover svg, .search:hover svg, .library:hover svg {
+    fill: var(--color-quaternary);
+}
+
 .home {
     position: relative;
 }
@@ -121,6 +129,14 @@ padding-bottom: 1rem;
     align-items: center;
 }
 
+.add-playlist:hover {
+    color: var(--color-quaternary);
+}
+
+.add-playlist:hover .playlist-add-icon {
+    background-color: var(--color-quaternary);
+}
+
 .create-playlist {
     font-size: .85rem;
 }
@@ -138,6 +154,10 @@ padding-bottom: 1rem;
     padding: .5rem 0;
 }
 
+.playlist-list ul li a:hover {
+    color: var(--color-quaternary);
+}
+
 /* INSTALLA + USER */
 .install {
     align-items: center;
@@ -148,9 +168,18 @@ padding-bottom: 1rem;
     padding-right: 10px;
 }
 
-.install-img img {
-    width: 10px;
+.install-img svg {
+    width: 15px;
     vertical-align: middle;
+    fill: var(--grey-txt);
+}
+
+.install:hover {
+    color: var(--color-quaternary);
+}
+
+.install:hover svg {
+    fill: var(--color-quaternary);
 }
 
 .divider {

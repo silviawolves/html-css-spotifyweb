@@ -440,7 +440,7 @@ h6 a:hover {
 .time-bar {
     max-width: 400px;
     min-width: 100px;
-    height: 2.5px;
+    height: 3px;
     background-color: var(--grey-txt);
     position: relative;
     border-radius: 10px;
@@ -448,10 +448,30 @@ h6 a:hover {
 
 .time-bar-progress {
     min-width: 25%;
-    height: 2.5px;
+    height: 3px;
     background-color: var(--color-quinary);
     position: absolute;
     border-radius: 10px;
+}
+
+.progress-btn, .volume-btn {
+    display: none;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    filter: blur(.5px);
+    position: absolute;
+    left: 23%;
+    top: -3.5px;
+    border-radius: 50%;
+}
+
+.time-bar:hover .time-bar-progress {
+    background-color: #adff2f;
+}
+
+.time-bar:hover .progress-btn {
+    display: block;
 }
 
 /* PARTE DESTRA PLAYER BAR */
@@ -461,7 +481,7 @@ h6 a:hover {
 }
 
 .volume {
-    height: 2.5px;
+    height: 3px;
     min-width: 80px;
     background-color: var(--grey-txt);
     position: relative;
@@ -469,10 +489,18 @@ h6 a:hover {
 }
 
 .volume-progress {
-    height: 2.5px;
+    height: 3px;
     min-width: 20px;
     background-color: var(--color-quinary);
     position: absolute;
     border-radius: 10px;
+}
+
+.volume:hover .volume-progress {
+    background-color: #adff2f;
+}
+
+.volume:hover .volume-btn {
+    display: block;
 }
 /* ----- END PLAYER BOTTOM BAR ------ */

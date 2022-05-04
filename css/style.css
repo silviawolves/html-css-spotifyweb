@@ -116,6 +116,44 @@ padding-bottom: 1rem;
     fill: var(--color-quinary);
 }
 
+/* -------- SMALL SIDEBAR -------- */
+.small-sidebar {
+    min-width: 40px;
+    background-color: var(--color-secondary);
+    color: var(--grey-txt);
+    display: none;
+    padding: .5rem;
+}
+
+.only-icons img {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.only-icons svg {
+    fill: var(--color-quinary);
+    padding-bottom: 5px;
+}
+
+.user-small {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-small svg {
+    width: 15px;
+    fill: var(--grey-txt);
+    text-align: center;
+}
+
+.user-small img {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
 /* PLAYLIST */
 .playlist-add-icon {
     height: 35px;
@@ -248,14 +286,13 @@ padding-bottom: 1rem;
 /*LINK TOP BAR*/
 .link-bar {
     text-align: center;
-    padding: .5rem 1rem;
 }
 
 .link-bar a {
     font-size: .7rem;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 0 .4rem;
+    padding: 1rem;
     display: inline-block;
 }
 
@@ -273,7 +310,7 @@ padding-bottom: 1rem;
     border-bottom: 2px solid #adff2f;
     position: absolute;
     left: 50%;
-    top: 17px;
+    top: 32px;
     transform: translate(-50%);
 }
 
@@ -411,11 +448,11 @@ h6 a:hover {
     padding-bottom: .5rem;
 }
 
-.control-btn .btn {
+.control-btn {
     color: var(--color-quaternary);
 }
 
-.btn i {
+.control-btn i {
     padding: 0 .5rem;
     vertical-align: middle;
 }
@@ -482,10 +519,10 @@ h6 a:hover {
 /* PARTE DESTRA PLAYER BAR */
 .view-btn {
     color: var(--color-quinary);
-    padding: 1rem;
 }
 
 .volume {
+    margin-left: 10px;
     height: 3px;
     min-width: 80px;
     background-color: var(--grey-txt);
@@ -545,7 +582,6 @@ h6 a:hover {
     .control-details {
         gap: 10px;
     }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -565,11 +601,35 @@ h6 a:hover {
 
     .album-icons {
         flex-direction: column;
+        gap: 7px;
+    }
+    .view-btn {
         gap: 5px;
     }
 
+    .volume {
+        margin-left: 5px;
+    }
+
+    .album-info, .player-info {
+        padding: 0.2rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    
+    .album-name {
+        padding: .5rem;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .small-sidebar {
+        display: block;
+    }
+
+    .top-nav-bar {
+        width: calc(100% - 30px);
+    }
 }

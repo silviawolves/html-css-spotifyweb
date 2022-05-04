@@ -224,10 +224,17 @@ padding-bottom: 1rem;
 }
 
 .album-wrapper {
-    flex-basis: calc((100% / 6) - 20px);
+    flex-basis: calc(100% / 6);
     background-color: darkslateblue;
-    width: 100%;
     aspect-ratio: 1/1;
+}
+
+.album-img {
+}
+
+.album-img img {
+    aspect-ratio: 1/1;
+    width: 100%;
 }
 
 

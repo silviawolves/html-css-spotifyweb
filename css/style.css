@@ -135,6 +135,10 @@ padding-bottom: 1rem;
 }
 
 /* PLAYLIST */
+.playlist {
+    overflow: hidden;
+}
+
 .playlist-add-icon {
     height: 35px;
     width: 35px;

@@ -1,3 +1,8 @@
+.now-playing {
+    align-items: center;
+    margin-left: 5px;
+}
+
 /* RESPONSIVE QUERY */
 @media screen and (max-width: 1100px) {
     .link-bar a {
@@ -120,7 +125,7 @@
     }
 
     .album-cover-small img {
-        height: 30px;
+        height: 40px;
     }
 
     .album-name h6 a {
@@ -138,5 +143,35 @@
 
     .time-bar {
         max-width: 80px;
+    }
+
+    .now-playing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: .8rem;
+    }
+
+    .album-name {
+        padding: 0;
+    }
+
+    .view-btn i {
+        padding: .5rem;
+    }
+
+    .album-name h6,
+    .volume {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    .top-nav-bar {
+        display: none;
+    }
+
+    .main-content {
+        padding-top: 1rem;
     }
 }

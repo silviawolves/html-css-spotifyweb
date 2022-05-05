@@ -546,6 +546,7 @@ h6 a:hover {
     .album-list {
         gap: 10px;
         flex-wrap: wrap;
+        overflow-y: auto;
     }
 
     .album-wrapper {

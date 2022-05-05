@@ -1,0 +1,142 @@
+/* RESPONSIVE QUERY */
+@media screen and (max-width: 1100px) {
+    .link-bar a {
+        font-size: .6rem;
+    }
+
+    .content-section {
+        overflow: hidden;
+    }
+
+    .album-list {
+        gap: 10px;
+        overflow-y: auto;
+        flex-wrap: nowrap;
+    }
+
+    .album-wrapper {
+        flex-basis: calc(100% / 4);
+        flex-shrink: 0;
+    }
+
+    .album-title h4 {
+        font-size: .7rem;
+    }
+
+    .album-title h5 {
+        font-size: .6rem;
+    }
+
+    .control-details {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .link-bar a {
+        padding: 1rem;
+    }
+
+    .border-green-bottom {
+        left: 50%;
+        top: 32px;
+        transform: translate(-50%);
+    }
+
+    .album-wrapper {
+        flex-basis: calc((100% / 3) - 5px);
+    }
+
+    .album-icons {
+        flex-direction: column;
+        gap: 7px;
+    }
+    .view-btn {
+        gap: 5px;
+    }
+
+    .control-details {
+        gap: 10px;
+    }
+
+    .volume {
+        margin-left: 5px;
+    }
+
+    .album-info, .player-info {
+        padding: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .album-name {
+        padding: .5rem;
+    }
+
+    .sidebar {
+        min-width: 30px;
+        padding: .5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spotify-img,
+    .border-green-left,
+    .menu-text,
+    .playlist-title,
+    .playlist-list,
+    .install-text,
+    .user-name,
+    .divider {
+        display: none;
+    }
+
+    .small-logo {
+        display: block;
+        height: 25px;
+    }
+
+    .home, .search, .library {
+        padding: 0.1rem 0;
+    }
+
+    .menu-icon svg,
+    .user-img img {
+        margin-right: 0px;
+    }
+
+    .install-img {
+        padding-right: 0;
+        padding-bottom: .5rem;
+    }
+
+    .user,
+    .install {
+        justify-content: center;
+    }
+
+    .top-nav-bar {
+        width: calc((100% - 30px) - .5rem);
+    }
+
+    .album-cover-small img {
+        height: 30px;
+    }
+
+    .album-name h6 a {
+        display: block;
+        width: 20px;
+    }
+
+    .album-name {
+        padding-right: 1rem;
+    }
+
+    .volume {
+        min-width: 70px;
+    }
+
+    .time-bar {
+        max-width: 80px;
+    }
+}

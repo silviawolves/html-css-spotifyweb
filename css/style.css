@@ -57,6 +57,10 @@ a {
 .space {
     justify-content: space-between;
 }
+
+.pointer {
+    cursor: pointer;
+}
 /* --------- END UTILITY CLASS ---------- */
 
 /* -------- SIDEBAR -------- */
@@ -516,16 +520,17 @@ h6 a:hover {
 
 /* RESPONSIVE QUERY */
 @media screen and (max-width: 1100px) {
-    .album-list {
-        gap: 10px;
+    .link-bar a {
+        font-size: .6rem;
     }
 
-    .control-details {
-        gap: 15px;
+    .album-list {
+        gap: 10px;
+        flex-wrap: wrap;
     }
 
     .album-wrapper {
-        flex-basis: calc((100% / 4) - 10px);
+        flex-basis: calc((100% / 4) - (10px / 4 * 3));
     }
 
     .album-title h4 {
@@ -536,22 +541,12 @@ h6 a:hover {
         font-size: .6rem;
     }
 
-    .album-list {
-        flex-wrap: wrap;
+    .control-details {
+        gap: 15px;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .link-bar a {
-        font-size: .6rem;
-    }
-
-    .control-details {
-        gap: 10px;
-    }
-}
-
-@media screen and (max-width: 600px) {
     .link-bar a {
         padding: 1rem;
     }
@@ -563,7 +558,7 @@ h6 a:hover {
     }
 
     .album-wrapper {
-        flex-basis: calc((100% / 2) - 10px);
+        flex-basis: calc((100% / 2) - 5px);
     }
 
     .album-icons {
@@ -572,6 +567,10 @@ h6 a:hover {
     }
     .view-btn {
         gap: 5px;
+    }
+
+    .control-details {
+        gap: 10px;
     }
 
     .volume {
@@ -583,7 +582,7 @@ h6 a:hover {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .album-name {
         padding: .5rem;
     }
